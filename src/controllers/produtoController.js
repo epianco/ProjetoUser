@@ -3,7 +3,7 @@ const Produto = require('../models/produto');
 const status = require('http-status');
 
 exports.Insert = (req, res, next) => {
-    const produto = req.body.nome;
+    const produto = req.body.produto;
     const descricao = req.body.descricao;
     const quantidade = req.body.quantidade;
     const valor = req.body.valor;
